@@ -25,8 +25,8 @@ jobs:
       - name: Check Style
         run: npm run format:check
 
-      - name: Check lint
-        run: npm run lint
+      - name: Check linting
+        run: npm run lint -- --max-warnings=0
 
   tests:
     name: Tests
